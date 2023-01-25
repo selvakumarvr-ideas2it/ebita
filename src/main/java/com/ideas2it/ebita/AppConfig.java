@@ -14,7 +14,7 @@ public class AppConfig {
     public DynamoDbClient getDynamoDbClient() {
         AwsCredentialsProvider credentialsProvider =
                 DefaultCredentialsProvider.builder()
-                        .profileName("pratikpoc")
+                        .profileName("default")
                         .build();
 
         return DynamoDbClient.builder()

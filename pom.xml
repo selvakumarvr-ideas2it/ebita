@@ -31,6 +31,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+			<version>3.0.2</version>
+		</dependency>
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-java-sdk-dynamodb</artifactId>
@@ -39,20 +45,32 @@
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
 			<artifactId>dynamodb</artifactId>
+			<version>2.19.22</version>
 		</dependency>
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
 			<artifactId>aws-sdk-java</artifactId>
-			<version>2.19.20</version>
+			<version>2.19.22</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/software.amazon.awssdk/iam -->
 		<dependency>
 			<groupId>software.amazon.awssdk</groupId>
 			<artifactId>iam</artifactId>
-			<version>2.19.20</version>
+			<version>2.19.22</version>
 			<scope>test</scope>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/software.amazon.awssdk/dynamodb-enhanced -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>dynamodb-enhanced</artifactId>
+			<version>2.19.22</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/software.amazon.awssdk/s3 -->
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>s3</artifactId>
+			<version>2.19.22</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -78,7 +96,7 @@
 			<dependency>
 				<groupId>software.amazon.awssdk</groupId>
 				<artifactId>bom</artifactId>
-				<version>2.19.20</version>
+				<version>2.19.22</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
